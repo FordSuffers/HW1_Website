@@ -1,0 +1,139 @@
+<!-- Jacob Ford -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h2 class="font-weight-bold">Add New Article</h2>
+        <br>
+        <form>
+            <h4 class="font-weight-bold">Article Title</h4>
+            <input type="text" class="form-control" id="Title" placeholder="Title">
+            <br><br>
+
+            <h4 class="font-weight-bold">Author Name</h4>
+            <input type="text" class="form-control" id="Name" placeholder="Name">
+            <br><br>
+
+
+            <div class="row">
+                <div class="col">
+                    <h4 class="font-weight-bold">Upload Files:</h4>
+                </div>
+                <div class="col">
+                    <h4 class="font-weight-bold">Pages</h4>   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="file" id="myFile" name="filename2">
+                </div>
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle btn-outline-secondary btn-block text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Academics
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Commentary</a>
+                            <a class="dropdown-item" href="#">Research</a>
+                            <a class="dropdown-item" href="#">Perspective</a>
+                            <a class="dropdown-item" href="#">Opinion</a>
+                            <a class="dropdown-item" href="#">Review</a>
+                            <a class="dropdown-item" href="#">Other</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <br><br>
+            <h4 class="font-weight-bold">Article Text</h4>
+            <textarea name="text" class="btn-block" id="text" rows="12"></textarea>
+
+
+            <br><br>
+            <div class="row">
+                <div class="col">
+                    <h4 class="font-weight-bold">Select Tags</h4>
+                </div>
+                <div class="col">
+                    <h4 class="font-weight-bold">Visibility</h4>   
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-check">
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-check-input" name="lang" value="C++" type="checkbox">Python
+                            </div>
+                            <div class="col">
+                                <input class="form-check-input" name="lang" value="C++" type="checkbox">C++
+                            </div>
+                            <div class="col">
+                                <input class="form-check-input" name="lang" value="Java" type="checkbox">Java
+                            </div>
+                            <div class="col">
+                                <input class="form-check-input" name="lang" value="Scala" type="checkbox">Scala
+                            </div>
+                            <div class="col">
+                                <input class="form-check-input" name="lang" value="Perl" type="checkbox">Perl
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio">Visible
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio">Invisible
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <h4 class="font-weight-bold">Login to Finish Submitting</h4>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" id="username" placeholder="username">
+                </div>
+                <div class="col">    
+                    <input type="password" class="form-control" id="password" placeholder="password">
+                </div>
+            </div>
+            <br>
+            <input type="checkbox" checked="unchecked" name="remember"> Remember me
+            <br>
+            <input type="submit" value="Submit">
+            <br><br>
+        </form>
+    </div>
+</body>
+</html>
+
+                    
+
